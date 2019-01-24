@@ -12,12 +12,12 @@
 
 <p>
   <strong>Img:</strong>
-  <%= @search.img %>
+  <%= image_tag @search.image %>
 </p>
 
 <p>
   <strong>Link:</strong>
-  <%= @search.link %>
+  <%= link_to "Link", @search.link, target: "_blank" %>
 </p>
 
 <%= link_to 'Edit', edit_search_path(@search) %> |

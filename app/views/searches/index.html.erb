@@ -7,7 +7,7 @@
     <tr>
       <th>Title</th>
       <th>Content</th>
-      <th>Img</th>
+      <th>Image</th>
       <th>Link</th>
       <th colspan="3"></th>
     </tr>
@@ -18,8 +18,8 @@
       <tr>
         <td><%= search.title %></td>
         <td><%= search.content %></td>
-        <td><%= search.img %></td>
-        <td><%= search.link %></td>
+        <td><%= image_tag search.image %></td>
+        <td><%= link_to "Link", search.link, target: "_blank" %></td>
         <td><%= link_to 'Show', search %></td>
         <td><%= link_to 'Edit', edit_search_path(search) %></td>
         <td><%= link_to 'Destroy', search, method: :delete, data: { confirm: 'Are you sure?' } %></td>

@@ -1,24 +1,20 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Projeto de Crawler ensinado pelo Professor Danilo Aparecido do site http://torneseumprogramador.com.br.
 
-Things you may want to cover:
+Obs.: Projeto em fazer inicial e carece de melhorias.
 
-* Ruby version
+## Tecnologias utilizadas
 
-* System dependencies
+* Ruby 2.5.1p57 (2018-03-29 revision 63029) [x86_64-linux]
+* Rails 5.2.2
 
-* Configuration
+## Principais GEMS
 
-* Database creation
+* cucumber-rails
 
-* Database initialization
+* capybara
 
-* How to run the test suite
+* selenium-webdriver
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* database_cleaner

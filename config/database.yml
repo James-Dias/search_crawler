@@ -7,6 +7,9 @@ development: &default
   password:
   host: localhost
 
-test:
+test: &test
   <<: *default
   database: cs_test
+
+cucumber:
+  <<: *test

@@ -36,9 +36,25 @@ gem 'jbuilder', '~> 2.5'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
+# Nokogiri (鋸) is a Rubygem providing HTML, XML, SAX, and Reader parsers with XPath and CSS selector support.
+# gem 'nokogiri'
+
+# Rails Generators for Cucumber with special support for Capybara and DatabaseCleaner
+gem 'cucumber-rails', require: false
+
+# Acceptance test framework for web applications
+gem 'capybara'
+
+# This gem provides Ruby bindings for WebDriver and has been tested to work on MRI (2.0 through 2.2)
+gem 'selenium-webdriver'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+end
+
+group :test do
+  gem 'database_cleaner'
 end
 
 group :development do
